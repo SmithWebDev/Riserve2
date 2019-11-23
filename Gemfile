@@ -37,6 +37,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'jquery-rails'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+gem 'hirb', '~> 0.7.3'
+gem 'stock_quote', '~> 3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
