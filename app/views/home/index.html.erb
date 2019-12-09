@@ -1,8 +1,15 @@
-<%  %>
-<% stock = StockQuote::Stock.quote("fb") %>
-
-<%= stock.inspect %>
+<%= form_tag root_path, :method => 'POST' do %>
+  <%= text_field_tag :ticker, nil, placeholder: 'Enter Ticker Symbol', size: 50 %>
+  <%= submit_tag 'Submit ' %>
+<% end %>
 <br>
   <hr><br>
+<% if @stock %>
+  <%= @stock.inspect %>
+<% elsif @nothing %>
+  <%= @nothing %>
+<% end %>
 
-<%= stock.latest_price %>
+<% if @error %>
+  <%= @error %>
+<% end %>

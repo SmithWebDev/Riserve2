@@ -40,6 +40,9 @@ gem 'jquery-rails'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
 gem 'hirb', '~> 0.7.3'
 gem 'stock_quote', '~> 3.0'
+gem 'pry-byebug', '~> 3.7'
+gem 'pry', '~> 0.12.2'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
